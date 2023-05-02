@@ -1,0 +1,68 @@
+---
+title: How to evolve your frontend (stack and beyond)
+description: 'This article was originaly written by me for Neon'
+---
+
+If you've worked on any user interface web development in recent years, you're familiar with the constant change, which can be both challenging and overwhelming. Frameworks change, languages evolve, and the widespread use of mobile devices has made developing for the web a continuous and exciting journey. The possibilities are endless, and it's natural that your stack will evolve over time.
+
+## What is a tech stack anyway?
+
+Here's an easy-to-digest explanation borrowed from [Mixpanel](https://mixpanel.com/blog/what-is-a-technology-stack/) : "A technology stack, also called a solutions stack, technology infrastructure, or a data ecosystem, is a list of all the technology services used to build and run one single application. The social site Facebook, for example, is composed of a combination of coding frameworks and languages including JavaScript, HTML, CSS, PHP, and ReactJS. This is Facebook's 'tech stack.'"
+
+## Choices we’ve made
+
+I joined Neon as a frontend developer in 2019, and React has been our framework of choice. While you can develop solely with HTML, CSS, and Javascript without any issues, as you try to build and scale, the appeal of maintainability, consistency, and component reusability is a huge advantage of React. Not to mention how much easier and less complex DOM manipulations become and how easy it is to integrate our data with the user interface.
+
+Back in 2019, we were using React together with [Proptypes](https://www.npmjs.com/package/prop-typess), an amazing library that makes property-checking a breeze in Javascript. [Styled Components](https://styled-components.com/) was our CSS-IN-JS choice, and I was also introduced to [Storybook](https://storybook.js.org/), my favourite tool to build, create, and test UI components in isolation. [Jest](https://jestjs.io/) was (and still is) our testing framework of choice, and the team was already on board with [React Hooks](https://react.dev/reference/react). I remember sitting at my desk on my first day at work, and after I cloned the team's current project, I couldn't find a single class-based component.
+It was then I realized that Neon is a team of builders and innovators. We strive to do our best work and always take the next step to create products that matter.
+
+What fascinates me most about working at Neon is that we always get to experiment hands-on with the most exciting and challenging frontend tech out there. That doesn't mean all of our trials succeed, but we learn from our choices and carry that knowledge over to the next project we tackle.
+
+## Our current frontend tech
+
+Our current frontend tech includes React Hooks and Context, which made state management way easier for us, but we still ended up with unnecessary data and too many endpoints to fetch from. That's when we moved our attention to [GraphQL](https://graphql.org/) together with [Apollo](https://www.apollographql.com/), and the combination significantly improved how we approach our APIs and data.
+
+At the end of 2019, we switched from Javascript to [Typescript](https://www.typescriptlang.org/), and we've never looked back. It improved our code readability and ensured that the products we ship are more stable, with fewer bugs. Coming from a non-CS background, the idea of static types scared me at first, but Typescript has saved me so many headaches that I can't remember how I used to write code without it. All week long, the team kept repeating, "Typescript is awesome!!!"
+
+We've been using [Emotion](https://emotion.sh/docs/introduction) as our CSS-in-JS choice, and it's been an amazing experience. I love that it's agnostic, and I also really enjoy the syntax. Our team continues to use and love Storybook, and we've enjoyed exploring [TestCafé](https://testcafe.io/) for our end-to-end tests. But maybe I saved the best for last: [Chakra UI](https://chakra-ui.com/) has been a game-changer for our team.
+
+## A few reasons why we’ve adopted Chakra
+
+Chakra is a component library that has been gaining greater popularity across the React community.
+
+### Development velocity
+
+It gives us the tools we need for fast prototyping and agile development. We can quickly turn wireframes that our designers worked on into living, breathing components to be reused in a product, ready to be tested and shipped.
+
+### Built with Typescript
+
+Since Chakra is built using TypeScript, it supports type checking out of the box. :)
+
+### Component centric
+
+The components that Chakra provides are robust enough to cover any number of scenarios you'd need in an application, and they're as easy to customize as it sounds. Chakra has lots of options for layout components, but I particularly like how it has both a [Flex](https://chakra-ui.com/docs/components/flex) and a [Stack](https://chakra-ui.com/docs/components/stack) component. Here's a Box component where the syntax is as easy as it gets:
+
+```
+<Box
+  mt={1}
+  fontWeight="semibold"
+  as="h4"
+  lineHeight="tight"
+>
+  This behaves like a div, but is rendered as an h4 element.
+</Box>
+```
+
+### Accessibility
+
+It’s built with accessibility (a11y) in mind and does an amazing job of addressing accessibility concerns.
+
+### Hooks
+
+Chakra has a whole section dedicated to hooks, and common custom hooks used in interfaces are ready for use. Not having to write a custom useState hook to check for a boolean value is convenient and time-saving. They also have super useful hooks like useDisclosure, which handles modals and alert components.
+
+## Some final thoughts
+
+Technology stacks are constantly evolving. Frontend tools and frameworks come and go, and it's important to keep up with the latest trends while also considering what best suits our needs. While we're currently satisfied with our chosen technologies, we remain open to exploring new options and staying up-to-date with emerging trends.
+
+One of the decisions we've made is to use Chakra UI as a base for writing our own component library. This approach allows us to leverage the speed of fast prototyping while ensuring that our designers have a consistent understanding of how the components behave.
