@@ -16,7 +16,7 @@ export default function Index({ posts, globalData }) {
       <SEO title={name} description={blogTitle} />
       <Header name={name} />
       <main className="w-full">
-        <h1 className="text-xl lg:text-2xl px-3 mb-48">Hi! I&apos;m {name}, a Frontend developer based in Vancouver.  With years of graphic and UI design experience, I am attentive to detail and focused on creating user-friendly products. My expertise includes technologies like TypeScript and React, allowing me to create interactive and responsive experiences for the web. I am passionate about the possibility of building products that will make people&apos;s lives easier and more enjoyable.</h1>
+        <h1 className="text-xl lg:text-2xl px-3 mb-48">Hi! I&apos;m {name}, a Frontend developer based in Vancouver.  With years of UI design experience, I am attentive to detail and focused on creating user-friendly products. My expertise includes technologies like TypeScript and React, allowing me to create interactive and responsive experiences for the web. I am passionate about the possibility of building products that will make people&apos;s lives easier and more enjoyable.</h1>
         <Experience descriptions={globalData} />
         <ul className="w-full">
           {posts.map((post) => (
