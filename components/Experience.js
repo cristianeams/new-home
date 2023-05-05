@@ -4,7 +4,7 @@ export default function Experience({ descriptions }) {
     const { neonDescription, starlingDescription, randomDescription } = descriptions
     return (
 
-        <div className="px-3 mb-48">
+        <div className="px-3 mb-48 dark:font-color-black" >
             <h2 className="text-xl lg:text-2xl mb-4">
                 Experience
             </h2>
@@ -32,6 +32,14 @@ export default function Experience({ descriptions }) {
             </h3>
             <p className="text-sm lg:text-base mb-1">January 2014 - June 2017</p>
             <p className="text-sm lg:text-base mb-8">{randomDescription}</p>
+            <button
+                type="button"
+                aria-label="Download resume as PDF"
+                className="flex h-full pr-2 bg-primary dark:bg-primary rounded-3xl p-2 dh-10 transition"
+            >
+                <a href="/Resume.pdf" download="Resume.pdf">Download PDF</a>
+
+            </button>
         </div>
     );
 }
