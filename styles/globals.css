@@ -14,4 +14,6 @@ h6 {
 
 body {
   font-family: var(--font-secondary);
+  background-color: #fbf4e9;
+  color: #14252E;
 }

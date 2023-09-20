@@ -14,6 +14,17 @@ const hoveredSiblingPlugin = plugin(function ({ addVariant, e }) {
   });
 });
 
+const textShadowPlugin = plugin(function ({ matchUtilities, theme }) {
+  matchUtilities(
+    {
+      'text-shadow': (value) => ({
+        textShadow: value,
+      }),
+    },
+    { values: theme('textShadow') }
+  )
+})
+
 const themesConfig = plugin(function ({ addComponents }) {
   const cssVars = {};
 
@@ -34,6 +45,12 @@ const themesConfig = plugin(function ({ addComponents }) {
 module.exports = {
   theme: {
     extend: {
+      textShadow: {
+        sm: '0 1px 2px var(--tw-shadow-color)',
+        DEFAULT: '0 2px 4px var(--tw-shadow-color)',
+        lg: '0 8px 16px var(--tw-shadow-color)',
+        custom: '.25px 0.25px 0 var(--tw-shadow-color),0.5px 0.5px 0 var(--tw-shadow-color),0.75px 0.75px 0 var(--tw-shadow-color),1px 1px 0 var(--tw-shadow-color),1.25px 1.25px 0 var(--tw-shadow-color),1.5px 1.5px 0 var(--tw-shadow-color),1.75px 1.75px 0 var(--tw-shadow-color),2px 2px 0 var(--tw-shadow-color),2.25px 2.25px 0 var(--tw-shadow-color),2.5px 2.5px 0 var(--tw-shadow-color),2.75px 2.75px 0 var(--tw-shadow-color),3px 3px 0 var(--tw-shadow-color),3.25px 3.25px 0 var(--tw-shadow-color),3.5px 3.5px 0 var(--tw-shadow-color),3.75px 3.75px 0 var(--tw-shadow-color),4px 4px 0 var(--tw-shadow-color),5.25px 5.25px 0 var(--tw-shadow-color),5.5px 5.5px 0 var(--tw-shadow-color),5.75px 5.75px 0 var(--tw-shadow-color),6px 6px 0 var(--tw-shadow-color)'
+      },
       backgroundImage: {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
@@ -102,5 +119,5 @@ module.exports = {
       typography: ['dark'],
     },
   },
-  plugins: [hoveredSiblingPlugin, pluginTypography, themesConfig],
+  plugins: [hoveredSiblingPlugin, pluginTypography, themesConfig, textShadowPlugin],
 };

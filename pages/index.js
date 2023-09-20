@@ -16,13 +16,14 @@ export default function Index({ posts, globalData }) {
       <SEO title={name} description={blogTitle} />
       <Header name={name} />
       <main className="w-full">
-        <h1 className="text-xl lg:text-2xl px-3 mb-48">Hi! I&apos;m {name}, a Frontend developer based in Vancouver.  With years of UI design experience, I am attentive to detail and focused on creating user-friendly products. My expertise includes technologies like TypeScript and React, allowing me to create interactive and responsive experiences for the web. I am passionate about the possibility of building products that will make people&apos;s lives easier and more enjoyable.</h1>
+        <h2 className="text-xl font-semibold lg:text-3xl px-3 mb-48">I&apos;m  a Frontend developer based in Vancouver.  I specialize in building accessible and user-friendly products. My expertise includes technologies like TypeScript and React, allowing me to create interactive and responsive experiences for the web.  that will make people&apos;s lives easier and more enjoyable.</h2>
         <Experience descriptions={globalData} />
         <ul className="w-full">
           {posts.map((post) => (
             <li
               key={post.filePath}
-              className="md:first:rounded-t-lg md:last:rounded-b-lg backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-30 bg-opacity-10 hover:bg-opacity-20 dark:hover:bg-opacity-50 transition border border-gray-800 dark:border-white border-opacity-10 dark:border-opacity-10 border-b-0 last:border-b hover:border-b hovered-sibling:border-t-0"
+              className="md:first:rounded-t-lg md:last:rounded-b-lg backdrop-blur-lg bg-white  
+               bg-opacity-10 hover:bg-opacity-20 transition border border-gray-800  border-opacity-10  border-b-0 last:border-b hover:border-b hovered-sibling:border-t-0"
             >
               <Link
                 as={`/posts/${post.filePath.replace(/\.mdx?$/, '')}`}
@@ -48,14 +49,6 @@ export default function Index({ posts, globalData }) {
         </ul>
       </main>
       <Footer copyrightText={footerText} />
-      <GradientBackground
-        variant="large"
-        className="fixed top-20 opacity-40 dark:opacity-60"
-      />
-      <GradientBackground
-        variant="small"
-        className="absolute bottom-0 opacity-20 dark:opacity-10"
-      />
     </Layout>
   );
 }

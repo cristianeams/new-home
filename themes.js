@@ -10,7 +10,16 @@ exports.COLOR_THEMES = {
   },
   bejamas: {
     colors: {
-      primary: '#FF8585',
+      primary: '#fbf4e9',
+      'gradient-1': '#D9AFD9',
+      'gradient-2': '#97D9E1',
+      'gradient-3': '#97D9E1',
+      'gradient-4': '#001AFF',
+    },
+  },
+  cris: {
+    colors: {
+      primary: '#fbf4e9',
       'gradient-1': '#D9AFD9',
       'gradient-2': '#97D9E1',
       'gradient-3': '#97D9E1',
