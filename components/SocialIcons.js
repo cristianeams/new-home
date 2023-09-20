@@ -7,7 +7,7 @@ export default function SocialIcons() {
       <a href="https://www.linkedin.com/in/cristianeams" className='pr-4 group'>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5 group-hover:fill-violet-300"
+          className="h-5 w-5 group-hover:fill-violet-300"
           fill="currentColor"
           viewBox="0 0 24 24">
           <path
@@ -18,7 +18,7 @@ export default function SocialIcons() {
       <a href="https://github.com/cristianeams" className='group'>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5 group-hover:fill-violet-300"
+          className="h-5 w-5 group-hover:fill-violet-300"
           fill="currentColor"
           viewBox="0 0 24 24">
           <path

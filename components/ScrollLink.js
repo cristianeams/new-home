@@ -14,9 +14,10 @@ export default function ScrollLink({ children, ...props }) {
         });
     };
     return (
-        <Link {...props} onClick={handleScroll}>
+        <Link {...props} onClick={handleScroll} legacyBehavior={false}>
             {children}
         </Link>
+
     );
 };
 

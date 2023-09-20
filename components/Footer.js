@@ -6,7 +6,6 @@ export default function Footer({ copyrightText }) {
     <footer className="py-16 flex flex-col items-center opacity-60 px-3">
       <div className='flex justify-center my-8'>
         <ScrollLink className="btn" href="#home">
-
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -23,8 +22,6 @@ export default function Footer({ copyrightText }) {
               d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75"
             ></path>
           </svg>
-
-
         </ScrollLink>
       </div>
       <SocialIcons />

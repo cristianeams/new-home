@@ -7,7 +7,6 @@ import ArrowIcon from '../components/ArrowIcon';
 import { getGlobalData } from '../utils/global-data';
 import SEO from '../components/SEO';
 import Experience from '../components/Experience';
-import ScrollLink from '../components/ScrollLink';
 
 export default function Index({ posts, globalData }) {
   const { footerText, name, blogTitle } = globalData;
@@ -17,8 +16,16 @@ export default function Index({ posts, globalData }) {
       <SEO title={name} description={blogTitle} />
       <Header name={name} />
       <main className="w-full mb-12">
-        <h2 className="text-xl font-semibold lg:text-3xl px-3 mb-48">I&apos;m  a Frontend developer based in Vancouver.  I specialize in building accessible and user-friendly products. My expertise includes technologies like TypeScript and React, allowing me to create interactive and responsive experiences for the web.  that will make people&apos;s lives easier and more enjoyable.</h2>
+        <h2 className="text-xl font-semibold lg:text-3xl px-3 mb-4">I&apos;m  a Frontend developer based in Vancouver.  I specialize in building accessible and user-friendly products. My expertise includes technologies like TypeScript and React, allowing me to create interactive and responsive experiences for the web.  that will make people&apos;s lives easier and more enjoyable.</h2>
+        <button
+          type="button"
+          aria-label="Contac me"
+          className="flex h-full bg-violet-300 rounded-3xl py-2 px-4 dh-10 hover:drop-shadow-xl mb-48"
+        >
+          <a href="mailto:contact@cristiane.dev" target="_blank" rel="noreferrer">Let&apos;s chat</a>
+        </button>
         <Experience descriptions={globalData} />
+
         <h4 className="text-xl font-semibold lg:text-4xl mb-12 px-3">
           Latest Post
         </h4>
@@ -32,7 +39,7 @@ export default function Index({ posts, globalData }) {
               <Link
                 as={`/posts/${post.filePath.replace(/\.mdx?$/, '')}`}
                 href={`/posts/[slug]`}
-                class="hover:bg-[linear-gradient(transparent 0 50%, amber-200 50% 75%,transparent 75%);]"
+                className="hover:bg-[linear-gradient(transparent 0 50%, amber-200 50% 75%,transparent 75%);]"
               >
                 <a className="py-6 lg:py-10 px-6 lg:px-16 block focus:outline-none focus:ring-4 group">
                   {post.data.date && (
@@ -48,8 +55,6 @@ export default function Index({ posts, globalData }) {
           ))}
         </ul>
       </main>
-
-
       <Footer copyrightText={footerText} />
     </Layout>
   );
