@@ -2,11 +2,12 @@ import Link from 'next/link';
 import { getPosts } from '../utils/mdx-utils';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-import Layout, { GradientBackground } from '../components/Layout';
+import Layout from '../components/Layout';
 import ArrowIcon from '../components/ArrowIcon';
 import { getGlobalData } from '../utils/global-data';
 import SEO from '../components/SEO';
 import Experience from '../components/Experience';
+import ScrollLink from '../components/ScrollLink';
 
 export default function Index({ posts, globalData }) {
   const { footerText, name, blogTitle } = globalData;
@@ -15,9 +16,12 @@ export default function Index({ posts, globalData }) {
     <Layout>
       <SEO title={name} description={blogTitle} />
       <Header name={name} />
-      <main className="w-full">
+      <main className="w-full mb-12">
         <h2 className="text-xl font-semibold lg:text-3xl px-3 mb-48">I&apos;m  a Frontend developer based in Vancouver.  I specialize in building accessible and user-friendly products. My expertise includes technologies like TypeScript and React, allowing me to create interactive and responsive experiences for the web.  that will make people&apos;s lives easier and more enjoyable.</h2>
         <Experience descriptions={globalData} />
+        <h4 className="text-xl font-semibold lg:text-4xl mb-12 px-3">
+          Latest Post
+        </h4>
         <ul className="w-full">
           {posts.map((post) => (
             <li
@@ -28,19 +32,15 @@ export default function Index({ posts, globalData }) {
               <Link
                 as={`/posts/${post.filePath.replace(/\.mdx?$/, '')}`}
                 href={`/posts/[slug]`}
+                class="hover:bg-[linear-gradient(transparent 0 50%, amber-200 50% 75%,transparent 75%);]"
               >
-                <a className="py-6 lg:py-10 px-6 lg:px-16 block focus:outline-none focus:ring-4">
+                <a className="py-6 lg:py-10 px-6 lg:px-16 block focus:outline-none focus:ring-4 group">
                   {post.data.date && (
                     <p className="uppercase mb-3 font-bold opacity-60">
                       {post.data.date}
                     </p>
                   )}
-                  <h2 className="text-2xl md:text-3xl">{post.data.title}</h2>
-                  {post.data.description && (
-                    <p className="mt-3 text-lg opacity-60">
-                      {post.data.description}
-                    </p>
-                  )}
+                  <h2 className="text-2xl md:text-3xl group-hover:underline decoration-4 decoration-violet-300 mb-2">{post.data.title}</h2>
                   <ArrowIcon className="mt-4" />
                 </a>
               </Link>
@@ -48,6 +48,8 @@ export default function Index({ posts, globalData }) {
           ))}
         </ul>
       </main>
+
+
       <Footer copyrightText={footerText} />
     </Layout>
   );
