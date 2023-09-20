@@ -11,6 +11,7 @@ export default function Experience({ descriptions }) {
             <a
                 className="group "
                 href={`https://neon.cc/`}
+                target="_blank" rel="noreferrer"
             >
                 <h4 className="text-sm lg:text-xl group-hover:underline decoration-4 decoration-violet-300 mb-2">
                     Neon - Frontend Developer
@@ -23,6 +24,7 @@ export default function Experience({ descriptions }) {
             <a
                 className="group"
                 href={`https://www.starlingminds.com/`}
+                target="_blank" rel="noreferrer"
             >
                 <h4 className="text-sm mt-8 lg:text-xl group-hover:underline decoration-4 decoration-violet-300 mb-2">
                     Starling Minds - Frontend Developer
@@ -34,6 +36,7 @@ export default function Experience({ descriptions }) {
             <a
                 className="group"
                 href={`https://www.behance.net/cristianeams`}
+                target="_blank" rel="noreferrer"
             >
                 <h4 className="text-sm mt-8 lg:text-xl group-hover:underline decoration-4 decoration-violet-300 mb-2">
                     UI Designer - Self Employed
