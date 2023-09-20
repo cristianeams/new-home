@@ -16,7 +16,7 @@ export default function Index({ posts, globalData }) {
       <SEO title={name} description={blogTitle} />
       <Header name={name} />
       <main className="w-full mb-12">
-        <h2 className="text-xl font-semibold lg:text-3xl px-3 mb-4">I&apos;m  a Frontend developer based in Vancouver.  I specialize in building accessible and user-friendly products. My expertise includes technologies like TypeScript and React, allowing me to create interactive and responsive experiences for the web.  that will make people&apos;s lives easier and more enjoyable.</h2>
+        <h2 className="text-xl font-semibold lg:text-3xl px-3 mb-4">I&apos;m  a Frontend developer based in Vancouver.  I specialize in building accessible and user-friendly products. My expertise includes technologies like TypeScript and React, allowing me to create interactive and responsive experiences for the web.</h2>
         <button
           type="button"
           aria-label="Contac me"
