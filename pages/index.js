@@ -19,8 +19,8 @@ export default function Index({ posts, globalData }) {
         <h2 className="text-xl font-semibold lg:text-3xl px-3 mb-4">I&apos;m  a Frontend developer based in Vancouver.  I specialize in building accessible and user-friendly products. My expertise includes technologies like TypeScript and React, allowing me to create interactive and responsive experiences for the web.</h2>
         <button
           type="button"
-          aria-label="Contac me"
-          className="flex h-full bg-violet-300 rounded-3xl py-2 px-4 dh-10 hover:drop-shadow-xl mb-48"
+          aria-label="Contact me"
+          className="flex h-full bg-violet-300 ml-3 rounded-3xl py-2 px-4 dh-10 hover:drop-shadow-xl mb-16 lg:mb-48"
         >
           <a href="mailto:contact@cristiane.dev" target="_blank" rel="noreferrer">Let&apos;s chat</a>
         </button>
