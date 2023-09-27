@@ -9,11 +9,11 @@ import SEO from '../components/SEO';
 import Experience from '../components/Experience';
 
 export default function Index({ posts, globalData }) {
-  const { footerText, name, blogTitle } = globalData;
+  const { footerText, name, titleSEO } = globalData;
 
   return (
     <Layout>
-      <SEO title={name} description={blogTitle} />
+      <SEO title={`${name} - Frontend Developer}`} description={`${name} - ${titleSEO}`} />
       <Header name={name} />
       <main className="w-full mb-12">
         <h2 className="text-xl font-semibold lg:text-3xl px-3 mb-4">I&apos;m  a Frontend developer based in Vancouver.  I specialize in building accessible and user-friendly products. My expertise includes technologies like TypeScript and React, allowing me to create interactive and responsive experiences for the web.</h2>
@@ -63,6 +63,5 @@ export default function Index({ posts, globalData }) {
 export function getStaticProps() {
   const posts = getPosts();
   const globalData = getGlobalData();
-
   return { props: { posts, globalData } };
 }
