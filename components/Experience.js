@@ -50,7 +50,7 @@ export default function Experience({ descriptions }) {
                 aria-label="Download resume as PDF"
                 className="flex h-full bg-violet-300 mt-8  rounded-3xl py-2 px-4 dh-10 hover:drop-shadow-xl"
             >
-                <a href="/cristianesilva.pdf" download>Download PDF</a>
+                <a href="/Resume_CristianeSilva.pdf" download>Download PDF</a>
 
             </button>
         </div>
