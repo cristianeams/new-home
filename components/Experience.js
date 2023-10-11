@@ -13,12 +13,12 @@ export default function Experience({ descriptions }) {
                 href={`https://neon.cc/`}
                 target="_blank" rel="noreferrer"
             >
-                <h4 className="text-sm lg:text-xl group-hover:underline decoration-4 decoration-violet-300 mb-2">
+                <h4 className="text-sm lg:text-xl group-hover:underline decoration-4 decoration-violet-300 mb-1">
                     Neon - Frontend Developer
                 </h4>
 
-                <p className="text-sm lg:text-md mb-2">September 2019 - Current</p>
-                <p className="text-sm lg:text-md">{neonDescription}</p>
+                <p className="text-sm lg:text-md mb-4">September 2019 - July 2023</p>
+                <p className="text-sm lg:text-base">{neonDescription}</p>
 
             </a>
             <a
@@ -26,24 +26,24 @@ export default function Experience({ descriptions }) {
                 href={`https://www.starlingminds.com/`}
                 target="_blank" rel="noreferrer"
             >
-                <h4 className="text-sm mt-8 lg:text-xl group-hover:underline decoration-4 decoration-violet-300 mb-2">
+                <h4 className="text-sm mt-8 lg:text-xl group-hover:underline decoration-4 decoration-violet-300 mb-1">
                     Starling Minds - Frontend Developer
                 </h4>
             </a>
 
-            <p className="text-sm lg:text-base mb-1">September 20198 - July 2019</p>
+            <p className="text-sm lg:text-md mb-4">September 2019 - July 2019</p>
             <p className="text-sm lg:text-base">{starlingDescription}</p>
             <a
                 className="group"
                 href={`https://www.behance.net/cristianeams`}
                 target="_blank" rel="noreferrer"
             >
-                <h4 className="text-sm mt-8 lg:text-xl group-hover:underline decoration-4 decoration-violet-300 mb-2">
+                <h4 className="text-sm mt-8 lg:text-xl group-hover:underline decoration-4 decoration-violet-300 mb-1">
                     UI Designer - Self Employed
                 </h4>
             </a>
 
-            <p className="text-sm lg:text-base mb-1">January 2014 - June 2017</p>
+            <p className="text-sm lg:text-md mb-4s">January 2014 - June 2017</p>
             <p className="text-sm lg:text-base">{randomDescription}</p>
             <button
                 type="button"

@@ -33,7 +33,7 @@ A customizable blog starter using:
 
 ---
 
-You can get started with this project in two ways: locally or using the [setup wizard](https://nextjs-wizard.netlify.app/).
+ect in two ways: locally or using the [setup wizard](https://nextjs-wizard.netlify.app/).
 
 ### Setting Up Locally
 
