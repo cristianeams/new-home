@@ -31,7 +31,7 @@ export default function Experience({ descriptions }) {
                 </h4>
             </a>
 
-            <p className="text-sm lg:text-md mb-4">September 2019 - July 2019</p>
+            <p className="text-sm lg:text-md mb-4">September 2018 - July 2019</p>
             <p className="text-sm lg:text-base">{starlingDescription}</p>
             <a
                 className="group"
