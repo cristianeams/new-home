@@ -16,7 +16,7 @@ export default function Index({ posts, globalData }) {
       <SEO title={`${name} - Frontend Developer`} description={`${name} - ${titleSEO}`} />
       <Header name={name} />
       <main className="w-full mb-12">
-        <h2 className="text-xl font-semibold lg:text-3xl px-3 mb-4">I&apos;m a skilled Front End Developer with 5+ years of experience.  My expertise includes technologies like TypeScript and React, allowing me to create interactive and responsive experiences for the web.</h2>
+        <h2 className="text-xl font-semibold lg:text-3xl px-3 mb-4">I&apos;m a Frontend Developer with 5+ years of experience in JavaScript/TypeScript, HTML/CSS, using React, NextJS and GraphQL. Excellent problem-solving and communication skills working with B2B companies.</h2>
         <button
           type="button"
           aria-label="Contact me"

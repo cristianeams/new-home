@@ -17,7 +17,7 @@ export default function Experience({ descriptions }) {
                     Neon - Frontend Developer
                 </h4>
 
-                <p className="text-sm lg:text-md mb-4">September 2019 - July 2023</p>
+                <p className="text-sm lg:text-md mb-4">September 2019 - September 2023</p>
                 <p className="text-sm lg:text-base">{neonDescription}</p>
 
             </a>
@@ -43,14 +43,14 @@ export default function Experience({ descriptions }) {
                 </h4>
             </a>
 
-            <p className="text-sm lg:text-md mb-4s">January 2014 - June 2017</p>
+            <p className="text-sm lg:text-md mb-4">January 2014 - June 2017</p>
             <p className="text-sm lg:text-base">{randomDescription}</p>
             <button
                 type="button"
                 aria-label="Download resume as PDF"
                 className="flex h-full bg-violet-300 mt-8  rounded-3xl py-2 px-4 dh-10 hover:drop-shadow-xl"
             >
-                <a href="/Resume_CristianeSilva.pdf" download>Download PDF</a>
+                <a href="/Resume_CristianeS.pdf" download>Download PDF</a>
 
             </button>
         </div>
